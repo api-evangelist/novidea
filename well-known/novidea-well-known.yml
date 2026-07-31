@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: probed
+source: live probe of https://novidea.com/.well-known/*
+host: https://novidea.com
+documents:
+- path: /.well-known/security.txt
+  status: 302
+  file: null
+- path: /.well-known/openid-configuration
+  status: 302
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 302
+  file: null
+- path: /.well-known/api-catalog
+  status: 302
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 302
+  file: null
+notes: >-
+  No .well-known discovery documents are published. Every probed path returns a
+  302 redirect (to the marketing site), not a served document, so there is no
+  security.txt, OIDC/OAuth discovery, API catalog, or AI plugin manifest. No
+  WellKnown/SecurityTxt scoring pointer is emitted. Recorded as a negative result.

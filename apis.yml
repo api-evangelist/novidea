@@ -1,8 +1,30 @@
 aid: novidea
 name: Novidea
-description: Novidea is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Novidea is a cloud-native insurance management platform built on Salesforce
+  that helps insurance brokers, MGAs (managing general agents), coverholders,
+  and carriers digitize the full insurance distribution lifecycle across front,
+  middle, and back office operations. The platform unifies quoting, underwriting,
+  binding, policy administration, claims, and accounting with real-time data and
+  analytics, workflow automation, document generation, and customer portals. It
+  markets a "truly open API framework" and an "API a la carte" offering for
+  extending and integrating the platform, but does not publish a public developer
+  portal, API reference, OpenAPI definition, or SDKs; its API surface is delivered
+  to customers on top of the Salesforce platform. Novidea is backed by Battery
+  Ventures and serves insurance distribution businesses globally.
 url: https://raw.githubusercontent.com/api-evangelist/novidea/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://novidea.com/wp-content/uploads/2023/08/optimized.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,47 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insurance
+- InsurTech
+- Insurance Distribution
+- Insurance Software
+- Brokers
+- MGA
+- Salesforce
+- Claims
+- Underwriting
 apis: []
+common:
+- type: DomainSecurity
+  url: security/novidea-domain-security.yml
+- type: Website
+  url: https://novidea.com
+  name: Website
+- type: Blog
+  url: https://novidea.com/blog/
+  name: Blog
+- type: Support
+  url: https://novidea-crm.my.site.com/support/login
+  name: Customer Support Portal
+- type: Pricing
+  url: https://novidea.com/pricing/
+  name: Pricing
+- type: TermsOfService
+  url: https://novidea.com/subscription-agreement/
+  name: Subscription Agreement
+- type: PrivacyPolicy
+  url: https://novidea.com/privacy-policy/
+  name: Privacy Policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
